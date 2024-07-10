@@ -134,7 +134,9 @@ public class Main {
         System.out.println("10% от зарлаты Кристины составляет " + premiumKris);
         int salarySupplement2 = salaryKris + premiumKris;
         System.out.println("Зарплата Кристины с надбавкой составляет " + salarySupplement2);
-        int salaryDifference2 = yearSalarySupplement1 + salarySupplement2;
-        System.out.println("Кристина теперь получает " + salaryDifference2 + " рублей. Годовой доход вырос на " + salaryDifference2 + " рублей");
+        int yearSalarySupplement2 = salarySupplement2 * 12;
+        System.out.println("Зарплата Кристины с надбавкой за год составляет " + yearSalarySupplement2);
+        int salaryDifference2 = yearSalarySupplement2 - yearSalaryKris;
+        System.out.println("Кристина теперь получает " + salarySupplement2 + " рублей. Годовой доход вырос на " + salaryDifference2 + " рублей");
     }
 }
